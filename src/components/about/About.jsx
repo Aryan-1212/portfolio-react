@@ -9,7 +9,7 @@ export default function About() {
                     <div className="md:5/12 lg:w-5/12">
                         <img
                             className="rounded-md shadow-2xl"
-                            src="src/assets/my-image.jpg"
+                            src="src/assets/my-image.webp"
                             alt="image"
                         />
                     </div>
