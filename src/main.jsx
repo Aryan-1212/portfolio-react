@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Routes} from "react-router-dom"
-import { Home, About, Contact, Project } from './components/index.js'
+import { Home, About, Contact, Project, Scantodine } from './components/index.js'
 import Layout from './Layout.jsx'
+import ProjectLayout from './ProjectLayout.jsx'
 
 const router = createBrowserRouter(
 //   [
@@ -33,10 +34,13 @@ const router = createBrowserRouter(
 // ]
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path='' element={<Home />} />
+      <Route index element={<Home />} />
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
-      <Route path='projects' element={<Project />} />
+      <Route path='projectlayout' element={<ProjectLayout />}>
+        <Route index element={<Project />} />
+        <Route path='scantodine' element={<Scantodine />} />
+      </Route>
     </Route>
   )
 )
