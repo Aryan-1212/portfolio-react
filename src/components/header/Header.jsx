@@ -8,8 +8,7 @@ export default function Header() {
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                         <img
-                            // src="src\assets\logo.png"
-                            src="http://localhost:5173/src/assets/logo.png"
+                            src="/src/assets/logo.png"
                             className="mr-3 h-20"
                             alt="Logo"
                         />
@@ -37,6 +36,7 @@ export default function Header() {
                             <li className='space-x-10'>
                                 <NavLink
                                 to="/"
+                                onClick={()=>window.scrollTo(0,0)}
                                     className={({isActive}) =>
                                         `py-2 pr-4 ${isActive? "text-orange-700":"text-gray-700"} pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
@@ -45,6 +45,7 @@ export default function Header() {
                                 </NavLink>
                                 <NavLink
                                 to="about"
+                                onClick={()=>window.scrollTo(0,0)}
                                     className={({isActive}) =>
                                         `py-2 pr-4 ${isActive? "text-orange-700":"text-gray-700"} pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
@@ -53,6 +54,7 @@ export default function Header() {
                                 </NavLink>
                                 <NavLink
                                 to="contact"
+                                onClick={()=>window.scrollTo(0,0)}
                                     className={({isActive}) =>
                                         `py-2 pr-4 ${isActive? "text-orange-700":"text-gray-700"} pl-3 duration-200 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }

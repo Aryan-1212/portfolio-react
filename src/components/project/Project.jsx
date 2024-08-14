@@ -14,13 +14,13 @@ function Project() {
         <ProjectCard src="src\assets\microsoft.png" to="microsoftClone" title="Mircosoft Responsive Clone" tech="HTML, CSS(Tailwindcss)" desc="A responsive clone of Microsoft's website using TailwindCSS to enhance my understanding of responsive design and modern CSS frameworks. This project showcases my ability to replicate complex layouts and create adaptive user interfaces." />
 
 
-        <ProjectCard src="src\assets\videoGen.jpg" to="videoGen" title="Auto Video Generator" tech="Python" desc="An automated video compilation tool that fetches video clips based on specified topics, combines them, and overlays a multi-language voiceover generated from a script. It streamlines the process of creating high-quality video content with customizable parameters, making it an efficient and cost-effective solution for content creators." />
+        <ProjectCard src="src\assets\videoGen.jpg" to="autoVideoGenerator" title="Auto Video Generator" tech="Python" desc="An automated video compilation tool that fetches video clips based on specified topics, combines them, and overlays a multi-language voiceover generated from a script. It streamlines the process of creating high-quality video content with customizable parameters, making it an efficient and cost-effective solution for content creators." />
 
 
         <ProjectCard src="src\assets\youtube.png" to="youtubeClone" title="Youtube Responsive Clone" tech="HTML, CSS" desc="A YouTube clone developed using HTML and CSS, demonstrating skills in front-end development and the ability to recreate complex interfaces with a focus on clean, responsive design." />
 
 
-        <ProjectCard src="src\assets\flipkart.png" to="flipkartClone" title="Flipkart Responsive Clone" tech="HTML, CSS" desc="A Flipkart clone built using HTML and CSS, highlighting expertise in front-end development and the ability to replicate intricate e-commerce layouts with responsive design principles." />
+        <ProjectCard src="src\assets\flipkart.png" to="flipkartClone" title="Flipkart Responsive Clone" tech="HTML, CSS, JavaScript" desc="A Flipkart clone built using HTML and CSS, highlighting expertise in front-end development and the ability to replicate intricate e-commerce layouts with responsive design principles." />
       </div>
     </div>
   )

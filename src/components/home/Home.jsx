@@ -35,7 +35,7 @@ export default function Home() {
             </div>
 
             <div className='flex items-center justify-center my-10'>
-                <Link to="projectlayout" className='text-2xl text-orange-700 relative link-underline'>visit more projects...</Link>
+                <Link to="projectlayout" onClick={()=>window.scrollTo(0,0)} className='text-2xl text-orange-700 relative link-underline'>visit more projects...</Link>
             </div>
         </div>
     );
