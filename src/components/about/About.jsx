@@ -17,7 +17,7 @@ export default function About() {
                         <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
                         Aryan Parvani,
                         </h2>
-                        <h3 className="text-xl text-gray-800">Dedicated Computer & AIML Student at L.D. College of Engineering</h3>
+                        <h3 className="text-xl text-gray-800">Dedicated Computer IT Student at L.D. College of Engineering</h3>
                         <p className="mt-6 text-gray-600">
                         I'm a passionate and motivated computer engineering student with a strong understanding of Python, JavaScript, and PHP, including frameworks like React and TailwindCSS. I’ve developed projects across these technologies, gaining valuable experience and honing my problem-solving skills. 
                         </p>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Footer() {
     return (
@@ -20,19 +20,19 @@ export default function Footer() {
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
-                                    <Link to="/" className="hover:underline">
+                                    <NavLink to="/" onClick={()=>window.scrollTo(0,0)} className={({isActive})=>`${isActive? "text-orange-700":"text-gray-700"} hover:text-orange-700`}>
                                         Home
-                                    </Link>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <Link to="/about" className="hover:underline">
+                                    <NavLink to="/about" onClick={()=>window.scrollTo(0,0)} className={({isActive})=>`${isActive? "text-orange-700":"text-gray-700"} hover:text-orange-700`}>
                                         About
-                                    </Link>
+                                    </NavLink>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow me</h2>
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
                                     <a
@@ -45,8 +45,8 @@ export default function Footer() {
                                     </a>
                                 </li>
                                 <li>
-                                    <Link to="/" className="hover:underline">
-                                        Discord
+                                    <Link to="https://www.linkedin.com/in/aryan-parvani-1a1b0b250/ " className="hover:underline">
+                                        Linkedin
                                     </Link>
                                 </li>
                             </ul>
