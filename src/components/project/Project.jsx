@@ -3,7 +3,8 @@ import ProjectCard from '../project-card/ProjectCard'
 
 function Project() {
   return (
-    <div className="mx-auto w-full max-w-7xl my-20">
+    <div className='dark:bg-gray-800'>
+    <div className="mx-auto w-full max-w-7xl py-20">
       <div className='px-5 sm:px-10 md:px-16 lg:px-24 xl:px-40 space-y-20'>
         <ProjectCard src="src\assets\scantodine-ss.png" to="scantodine" title="ScanToDine" tech="HTML, CSS, JavaScript, Php" desc="ScanToDine is a digital food ordering platform using QR code technology to connect restaurants with customers. It allows for effortless digital menu management, real-time order updates, and seamless online billing. The system enhances kitchen operations, ensures smooth dining experiences, and offers robust customer feedback and analytics." />
 
@@ -22,6 +23,7 @@ function Project() {
 
         <ProjectCard src="src\assets\flipkart.png" to="flipkartClone" title="Flipkart Responsive Clone" tech="HTML, CSS, JavaScript" desc="A Flipkart clone built using HTML and CSS, highlighting expertise in front-end development and the ability to replicate intricate e-commerce layouts with responsive design principles." />
       </div>
+    </div>
     </div>
   )
 }

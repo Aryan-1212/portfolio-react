@@ -3,37 +3,42 @@ import { Link, NavLink } from 'react-router-dom';
 
 export default function Footer() {
     return (
-        <footer className="bg-white border-y">
+        <footer className="bg-white dark:bg-gray-800 border-y dark:border-y-gray-700">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
                                 src="/src/assets/logo.png"
-                                className="mr-3 h-20"
+                                className="mr-3 h-20 dark:hidden"
+                                alt="Logo"
+                            />
+                            <img
+                                src="/src/assets/dark-logo.png"
+                                className="mr-3 h-20 hidden dark:block"
                                 alt="Logo"
                             />
                         </Link>
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 dark:text-gray-400 uppercase">Resources</h2>
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
-                                    <NavLink to="/" onClick={()=>window.scrollTo(0,0)} className={({isActive})=>`${isActive? "text-orange-700":"text-gray-700"} hover:text-orange-700`}>
+                                    <NavLink to="/" onClick={()=>window.scrollTo(0,0)} className={({isActive})=>`${isActive? "text-orange-700 dark:text-[#ffb703]":"text-gray-700 dark:text-white"} hover:text-orange-700 dark:hover:text-[#ffb703]`}>
                                         Home
                                     </NavLink>
                                 </li>
                                 <li>
-                                    <NavLink to="/about" onClick={()=>window.scrollTo(0,0)} className={({isActive})=>`${isActive? "text-orange-700":"text-gray-700"} hover:text-orange-700`}>
+                                    <NavLink to="/about" onClick={()=>window.scrollTo(0,0)} className={({isActive})=>`${isActive? "text-orange-700 dark:text-[#ffb703]":"text-gray-700 dark:text-white"} hover:text-orange-700  dark:hover:text-[#ffb703]`}>
                                         About
                                     </NavLink>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow me</h2>
-                            <ul className="text-gray-500 font-medium">
+                            <h2 className="mb-6 text-sm font-semibold text-gray-900 dark:text-gray-400 uppercase">Follow me</h2>
+                            <ul className="text-gray-500 dark:text-gray-300 font-medium">
                                 <li className="mb-4">
                                     <a
                                         href="https://github.com/Aryan-1212"
