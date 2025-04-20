@@ -40,7 +40,7 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path='about' element={<About />} />
         <Route path='contact' element={<Contact />} />
-        <Route path='projectlayout' element={<ProjectLayout />}>
+        <Route path='projects' element={<ProjectLayout />}>
           <Route index element={<Project />} />
           <Route path='scantodine' element={<Scantodine />} />
           <Route path='jarvisai' element={<Jarvis />} />
@@ -53,7 +53,7 @@ const App = () => {
     )
   )
 
-  const [themeMode, setThemeMode] = useState('light')
+  const [themeMode, setThemeMode] = useState('dark')
 
   const darkTheme = () => {
     setThemeMode("dark")
